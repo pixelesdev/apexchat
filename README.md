@@ -1,5 +1,7 @@
 # ApexChat
 
+![ChatGPT Image Nov 30, 2025, 04_01_36 PM](https://github.com/user-attachments/assets/45ce0a6a-11ff-4da7-9e5e-d5079950e8fa)
+
 ApexChat is a lightweight and modern chat management plugin for **Minecraft 1.21.x**.  
 It provides private messaging, chat clearing, mute tools, and optional LuckPerms prefix support — all in a simple, fast, and reliable package.
 
