@@ -1,0 +1,59 @@
+name: ApexChat
+version: 1.0.0
+main: dev.pixeles.apexchat.ApexChatPlugin
+api-version: '1.21'
+author: Ralph Turner (pixelesdev)
+description: Advanced chat management plugin (ApexChat)
+softdepend: [LuckPerms]
+
+commands:
+  clearchat:
+    description: Clear your own chat or the global chat
+    usage: /clearchat [all]
+    aliases: [cc]
+    permission: apexchat.clearchat.self
+  pmsg:
+    description: Send a private message to another player
+    usage: /pmsg <player> <message>
+    aliases: [pm, msg, tell, w]
+    permission: apexchat.msg
+  reply:
+    description: Reply to the last private message
+    usage: /reply <message>
+    aliases: [r]
+    permission: apexchat.msg
+  mute:
+    description: Mute a player
+    usage: /mute <player>
+    permission: apexchat.mute
+  unmute:
+    description: Unmute a player
+    usage: /unmute <player>
+    permission: apexchat.mute
+  mutechat:
+    description: Toggle global chat mute
+    usage: /mutechat
+    permission: apexchat.mutechat
+
+permissions:
+  apexchat.clearchat.self:
+    description: Allow clearing your own chat
+    default: true
+  apexchat.clearchat.all:
+    description: Allow clearing global chat
+    default: op
+  apexchat.msg:
+    description: Allow sending private messages
+    default: true
+  apexchat.mute:
+    description: Allow muting/unmuting players
+    default: op
+  apexchat.mutechat:
+    description: Allow toggling global chat mute
+    default: op
+  apexchat.bypass.mute:
+    description: Bypass personal mute
+    default: op
+  apexchat.bypass.globalmute:
+    description: Talk while global chat is muted
+    default: op
